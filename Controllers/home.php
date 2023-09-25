@@ -12,10 +12,11 @@
             $this->views->getView($this,"home",$data);
         }
 
-        public function datos($params){
+        public function insert(){
 
-            $carrito = "".$this->model->getCarrito($params);
-            echo "Datos ". $carrito;
+            $data = $this->model->setUser("Aarom","viza",26);
+            print_r($data);
+
         }
     }
 ?>
